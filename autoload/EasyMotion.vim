@@ -150,6 +150,22 @@ function! EasyMotion#OverwinF(num_strokes) " {{{
         return EasyMotion#overwin#move(re)
     endif
 endfunction "}}}
+function! EasyMotion#OverwinF_TextObject(target, operation) " {{{
+    let re = s:findMotion(1, s:DIRECTION.bidirection)
+    call EasyMotion#reset()
+    if re isnot# ''
+        call EasyMotion#overwin#move(re)
+        if a:operation == 'c'
+            execute "normal di" . a:target | startinsert
+        elseif a:operation == 'd'
+            execute "normal di" . a:target
+        elseif a:operation == 'y'
+            execute "normal yi" . a:target
+        elseif a:operation == 'v'
+            execute "normal vi" . a:target
+        endif
+    endif
+endfunction "}}}
 function! EasyMotion#T(num_strokes, visualmode, direction) " {{{
     if a:direction == 1
         let is_inclusive = 0
