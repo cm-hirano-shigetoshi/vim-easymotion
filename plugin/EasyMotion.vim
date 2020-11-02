@@ -288,3 +288,55 @@ let &cpo = s:save_cpo
 unlet s:save_cpo
 " }}}
 " vim: fdm=marker:et:ts=4:sw=4:sts=4
+
+if exists('g:EasyMotion_do_mapping_textobj') && g:EasyMotion_do_mapping_textobj == 1
+    nnoremap cs' :<C-u>call EasyMotion#OverwinF_TextObject("'", 'c')<CR>'
+    nnoremap ds' :<C-u>call EasyMotion#OverwinF_TextObject("'", 'd')<CR>'
+    nnoremap vs' :<C-u>call EasyMotion#OverwinF_TextObject("'", 'v')<CR>'
+    nnoremap ys' :<C-u>call EasyMotion#OverwinF_TextObject("'", 'y')<CR>'
+    nnoremap cs" :<C-u>call EasyMotion#OverwinF_TextObject('"', 'c')<CR>"
+    nnoremap ds" :<C-u>call EasyMotion#OverwinF_TextObject('"', 'd')<CR>"
+    nnoremap vs" :<C-u>call EasyMotion#OverwinF_TextObject('"', 'v')<CR>"
+    nnoremap ys" :<C-u>call EasyMotion#OverwinF_TextObject('"', 'y')<CR>"
+    nnoremap cs( :<C-u>call EasyMotion#OverwinF_TextObject('(', 'c')<CR>(
+    nnoremap ds( :<C-u>call EasyMotion#OverwinF_TextObject('(', 'd')<CR>(
+    nnoremap vs( :<C-u>call EasyMotion#OverwinF_TextObject('(', 'v')<CR>(
+    nnoremap ys( :<C-u>call EasyMotion#OverwinF_TextObject('(', 'y')<CR>(
+    nnoremap cs) :<C-u>call EasyMotion#OverwinF_TextObject(')', 'c')<CR>)
+    nnoremap ds) :<C-u>call EasyMotion#OverwinF_TextObject(')', 'd')<CR>)
+    nnoremap vs) :<C-u>call EasyMotion#OverwinF_TextObject(')', 'v')<CR>)
+    nnoremap ys) :<C-u>call EasyMotion#OverwinF_TextObject(')', 'y')<CR>)
+    nnoremap cs( :<C-u>call EasyMotion#OverwinF_TextObject('<', 'c')<CR><
+    nnoremap ds( :<C-u>call EasyMotion#OverwinF_TextObject('<', 'd')<CR><
+    nnoremap vs< :<C-u>call EasyMotion#OverwinF_TextObject('<', 'v')<CR><
+    nnoremap ys< :<C-u>call EasyMotion#OverwinF_TextObject('<', 'y')<CR><
+    nnoremap cs> :<C-u>call EasyMotion#OverwinF_TextObject('>', 'c')<CR>>
+    nnoremap ds> :<C-u>call EasyMotion#OverwinF_TextObject('>', 'd')<CR>>
+    nnoremap vs> :<C-u>call EasyMotion#OverwinF_TextObject('>', 'v')<CR>>
+    nnoremap ys> :<C-u>call EasyMotion#OverwinF_TextObject('>', 'y')<CR>>
+    nnoremap cs[ :<C-u>call EasyMotion#OverwinF_TextObject('[', 'c')<CR>[
+    nnoremap ds[ :<C-u>call EasyMotion#OverwinF_TextObject('[', 'd')<CR>[
+    nnoremap vs[ :<C-u>call EasyMotion#OverwinF_TextObject('[', 'v')<CR>[
+    nnoremap ys[ :<C-u>call EasyMotion#OverwinF_TextObject('[', 'y')<CR>[
+    nnoremap cs] :<C-u>call EasyMotion#OverwinF_TextObject(']', 'c')<CR>]
+    nnoremap ds] :<C-u>call EasyMotion#OverwinF_TextObject(']', 'd')<CR>]
+    nnoremap vs] :<C-u>call EasyMotion#OverwinF_TextObject(']', 'v')<CR>]
+    nnoremap ys] :<C-u>call EasyMotion#OverwinF_TextObject(']', 'y')<CR>]
+    nnoremap cs{ :<C-u>call EasyMotion#OverwinF_TextObject('{', 'c')<CR>{
+    nnoremap ds{ :<C-u>call EasyMotion#OverwinF_TextObject('{', 'd')<CR>{
+    nnoremap vs{ :<C-u>call EasyMotion#OverwinF_TextObject('{', 'v')<CR>{
+    nnoremap ys{ :<C-u>call EasyMotion#OverwinF_TextObject('{', 'y')<CR>{
+    nnoremap cs} :<C-u>call EasyMotion#OverwinF_TextObject('}', 'c')<CR>}
+    nnoremap ds} :<C-u>call EasyMotion#OverwinF_TextObject('}', 'd')<CR>}
+    nnoremap vs} :<C-u>call EasyMotion#OverwinF_TextObject('}', 'v')<CR>}
+    nnoremap ys} :<C-u>call EasyMotion#OverwinF_TextObject('}', 'y')<CR>}
+    nnoremap csw :<C-u>call EasyMotion#OverwinF_TextObject('w', 'c')<CR>
+    nnoremap dsw :<C-u>call EasyMotion#OverwinF_TextObject('w', 'd')<CR>
+    nnoremap vsw :<C-u>call EasyMotion#OverwinF_TextObject('w', 'v')<CR>
+    nnoremap ysw :<C-u>call EasyMotion#OverwinF_TextObject('w', 'y')<CR>
+    nnoremap csW :<C-u>call EasyMotion#OverwinF_TextObject('W', 'c')<CR>
+    nnoremap dsW :<C-u>call EasyMotion#OverwinF_TextObject('W', 'd')<CR>
+    nnoremap vsW :<C-u>call EasyMotion#OverwinF_TextObject('W', 'v')<CR>
+    nnoremap ysW :<C-u>call EasyMotion#OverwinF_TextObject('W', 'y')<CR>
+endif
+
